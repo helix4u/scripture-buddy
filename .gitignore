@@ -1,0 +1,95 @@
+# ----------------------------
+# Root Git Ignore for Scripture Buddy (monorepo)
+# Target stack: Node.js, Vite, React Router, Hono
+# ----------------------------
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+*.lcov
+
+# Dependency directories
+node_modules/
+
+# Build outputs / caches
+.dist/
+dist/
+build/
+out/
+.temp/
+.tmp/
+.temp*/
+.tmp*/
+.cache/
+.vite/
+.vitest/
+.vscode-test/
+
+# App-level outputs (monorepo)
+apps/*/dist/
+apps/*/build/
+apps/*/.vite/
+apps/*/.cache/
+apps/*/.react-router/
+
+# Ignore mobile app directory (web-only repo)
+apps/mobile/
+
+# Framework-specific
+.next/
+.nuxt/
+.svelte-kit/
+.storybook-out/
+
+# Env & local config (keep example files)
+.env
+.env.*
+!.env.example
+
+# OS junk
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+Icon
+
+# IDE/editor
+.vscode/
+.idea/
+*.iml
+
+# Package managers
+.npm/
+.pnpm-store/
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# Misc
+*.swp
+*.swo
+*.orig
+*.rej
+*.patch
+.tmp_patch.diff
+
+# Lockfiles (optional — uncomment to ignore)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
